@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.post {
+  color: #0891b2;
+  font-size: 2rem;
+  letter-spacing: 0.025em;
+  font-weight: bold;
+  line-height: 2.5rem;
+}
+
+.post > div > pre {
+  overflow-x: auto;
+}
+
+.post p {
+  color: initial;
+  font-size: initial;
+  line-height: initial;
+  font-weight: 300;
+  margin: 0.75rem 0;
+}
+
+.post pre {
+  color: initial;
+  font-size: initial;
+  line-height: initial;
+  font-weight: 300;
+  margin: 0.75rem 0;
+}
+
+.post p a {
+  color: #7dd3fc;
+}
+
+.post a:hover {
+  color: #7dd3fc;
+}

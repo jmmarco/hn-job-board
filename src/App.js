@@ -46,10 +46,7 @@ function App() {
   }
 
   return (
-    <div className="text-pink-600 text-2xl p-4 ">
-      Hello this is HN Job Board
-      page: {JSON.stringify(page)}
-      <hr/>
+    <div className="text-gray-800 text-2xl p-4 font-light">
       {jobs && jobs?.slice(0, page).map((j) => (
         <JobPost jobId={j} key={j} />
       ))}
