@@ -19,11 +19,8 @@ export default function JobPost({ jobId }) {
         setJobPost(result);
 
         if (postRef.current) {
-          console.log(postRef);
           const firstTextNode = postRef.current.childNodes[0];
           if (firstTextNode.length > 80) {
-            console.log("found one...");
-            console.log(postRef.current);
             postRef.current.classList.add("truncate");
             postRef.current.addEventListener("click", function () {
               this.classList.toggle("truncate");

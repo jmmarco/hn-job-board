@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
-// import useFetch from "./hooks/useFetch";
 import JobPost from "./JobPost";
-
 
 function App() {
   const [jobs, setJobs] = useState(null);
